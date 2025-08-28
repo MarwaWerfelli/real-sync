@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useCallback, useMemo } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { ref, onValue, off } from "firebase/database";
 import { Virtuoso } from "react-virtuoso";
 import { database } from "@/lib/firebase";
@@ -8,7 +8,6 @@ import { SharedValue } from "@/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { useToast } from "@/components/ui/Toast";
-import { SkeletonCard } from "@/components/ui/Skeleton";
 import { formatTimestamp } from "@/lib/utils";
 import {
   TrendingUp,

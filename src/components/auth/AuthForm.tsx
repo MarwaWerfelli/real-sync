@@ -7,7 +7,7 @@ import * as Yup from "yup";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { Card, CardContent } from "@/components/ui/Card";
 import { getFirebaseErrorMessage } from "@/utils/firebaseErrors";
 import {
   Eye,
@@ -17,7 +17,6 @@ import {
   AlertCircle,
   CheckCircle2,
   Loader2,
-  Sparkles,
   Shield,
 } from "lucide-react";
 

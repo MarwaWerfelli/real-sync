@@ -3,7 +3,9 @@
 import React from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/Button";
+import { AddValueForm } from "./AddValueForm";
 import { LogOut, User } from "lucide-react";
+import { ValuesList } from "./ValuesList";
 
 export const Dashboard: React.FC = () => {
   const { user, logout } = useAuth();
@@ -46,7 +48,10 @@ export const Dashboard: React.FC = () => {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="space-y-8">content</div>
+        <div className="space-y-8">
+          <AddValueForm />
+          <ValuesList />
+        </div>
       </main>
     </div>
   );

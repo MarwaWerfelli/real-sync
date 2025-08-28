@@ -4,3 +4,5 @@ export { Input } from "./Input";
 export { Card, CardContent, CardHeader, CardTitle } from "./Card";
 export { LoadingSpinner } from "./LoadingSpinner";
 export { ToastProvider, useToast } from "./Toast";
+export { Skeleton, SkeletonText, SkeletonCard } from "./Skeleton";
+export { ErrorBoundary } from "./ErrorBoundary";
